@@ -1,38 +1,42 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>CTRL+PLAY</title>
-        <meta charset="UTF-8">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>JavaScript Calculator</h1>
+    <p class="warning">Don't divide by zero</p>
 
-    <body bgcolor="#d3d3d3" text="#00008B">
-        <h1 id="titulo">O MEU site da <u>CTRL+PLAY</u>!!</h1>
+    <div id="calculator" class="calculator">
 
-        <p>vamos ver que tipo de coisa eu consigo fazer em html...</p>
-        <p id="ia">(essa ia que fica dando sugestão do que escrever é <b><u>muito chata</u></b>)</p>
+        <button id="clear" class="clear">C</button>
 
-        <p>o melhor pokemon da história:</p>
-        <img src="inicial 2 imagem.png" width="200" height="200"> <!-- assim que comenta :o -->
+        <div id="viewer" class="viewer">0</div>
 
-        <p>
-            <em>italico com enfase?</em><br>
-            <strong>negrito com enfase?</strong><br>
-            <b>bold haha</b><br>
-            <u>sublinhado</u><br>
-            <i>italico????</i><br>
-        </p>
+        <button class="num" data-num="7">7</button>
+        <button class="num" data-num="8">8</button>
+        <button class="num" data-num="9">9</button>
+        <button data-ops="plus" class="ops">+</button>
 
-        <center><p><font size=20 color="green" face="Comic Sans MS">nova fonte insana</font></p>
-</center>
+        <button class="num" data-num="4">4</button>
+        <button class="num" data-num="5">5</button>
+        <button class="num" data-num="6">6</button>
+        <button data-ops="minus" class="ops">-</button>
 
-        <img src="inicial 2 imagem.png" alt="tadinho" align="right" width="200" height="50" hspace="2" vspace="10" border="10" title="tadingho">
-    
-        <h3><a href="exemploaula.html" target="_self">A PÁGINA DA AULA</a></h3>
+        <button class="num" data-num="1">1</button>
+        <button class="num" data-num="2">2</button>
+        <button class="num" data-num="3">3</button>
+        <button data-ops="times" class="ops">*</button>
 
-        <hr>
+        <button class="num" data-num="0">0</button>
+        <button class="num" data-num=".">.</button>
+        <button id="equals" class="equals" data-result="">=</button>
+        <button data-ops="divided by" class="ops">/</button>
+    </div>
 
-        <h5>listas...</h5>
-        
-
-    </body>
+    <a id="reset" class="reset" href="https://codepen.io/giana/pen/GJMBEv" target="_top">Reset Universe?</a>
+</body>
 </html>
